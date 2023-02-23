@@ -1,13 +1,11 @@
-# Lion-vs-Adam
+# 🦁 Lion (Evo<font color=red>L</font>ved S<font color=red>i</font>gn M<font color=red>o</font>me<font color=red>n</font>tum) vs Adam(W)
+ [Lion, EvoLved Sign Momentum](https://arxiv.org/abs/2302.06675 "Lion") , Google Brain发现的新优化器，据称比Adam(W)更好。 
 
-## 🦁 Lion (EvoLved Sign Momentum)
- [Lion](https://arxiv.org/abs/2302.06675 "Lion") , EvoLved Sign Momentum, Google Brain发现的新优化器，据称比Adam(W)更好。 
-
-对Lion与Adam及其他接近的优化器进行了二维优化的可视化对比，发现：
+对Lion与Adam(W)及其他接近的优化器进行了二维优化的可视化对比，发现：
 
 - Lion优化器趋向于在大范围进行搜索解空间以后再进行小范围搜索
 - Adam(W) 优化器趋向于直接使用小范围局部的梯度直接走向局部最小值，此外SGD也有类似的表现
-- SIGNUM则与Lion相近，但是由于其没有衰减系数，无法快速的锁定大致范围，而在大范围内跳跃。
+- [SIGNUM](https://arxiv.org/abs/1802.04434 "") 优化器则与Lion相近，但是由于其没有衰减系数，无法快速的锁定大致范围，而在大范围内跳跃。
 - Lion优化器必须搭配学习率衰减,适配的学习率衰减策略应该在大学习率时有效的跳过局部最小值，并快速锁定全局最小值所在范围，然后使用小学习率收敛至全局最小值。
 
 
